@@ -1,4 +1,9 @@
-<?php include('db_connect.php');?>
+
+<?php 
+include('db_connect.php');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 
 <div class="container-fluid">
 	
@@ -74,9 +79,11 @@
 										<b><?php echo number_format($row['amount'],2) ?></b>
 									</td>
 									<td class="text-center">
-										<button class="btn btn-sm btn-primary edit_plan" type="button" data-id="<?php echo $row['id'] ?>" data-plan="<?php echo $row['plan'] ?>" data-description="<?php echo $row['description'] ?>" data-amount="<?php echo $row['amount'] ?>" >Edit</button>
-										<button class="btn btn-sm btn-danger delete_plan" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
-									</td>
+
+									<button class="btn btn-sm btn-primary edit_plan" type="button" data-id="<?php echo $row['id'] ?>" data-plan="<?php echo $row['plan'] ?>" data-description="<?php echo $row['description'] ?>" data-amount="<?php echo $row['amount'] ?>" >Edit</button>										
+									<button class="btn btn-sm btn-danger delete_plan" type="button" data-id="<?php echo $row['id'] ?>">Delete</button>
+									
+								</td>
 								</tr>
 								<?php endwhile; ?>
 							</tbody>

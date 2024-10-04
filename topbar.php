@@ -16,7 +16,7 @@
   		
   		</div>
       <div class="col-md-4 float-left text-white">
-        <large><b>Gym Management System</b></large>
+        <large><b>Extreme Gym Management</b></large>s
       </div>
 	  	<div class="float-right">
         <div class=" dropdown mr-4">
